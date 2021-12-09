@@ -12,6 +12,16 @@
 	<link rel="stylesheet" href="css/style.css">
     <title>Michigan College Thrifts</title>
     
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPYC99C74N"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'G-VPYC99C74N');
+     </script>
+    
 </head>
 <body>
     <a class = "skip" href="#skip">Skip to Main Content</a>
@@ -72,7 +82,7 @@
             <p id = 'four'> 
                 While we continue to expand, we hope to focus our attention on other ways we can implement sustainability into our company.
                 As a way to reduce our emissions from shipping products to buyers, we've offered porch pick up and local delivery. We've also tried 
-                to keep our scope local, focusing on Michigan Colleges in particular to and reduce our emissions when we ship products out. 
+                to keep our scope local, focusing on Michigan Colleges in particular to reduce our emissions when we ship products out. 
                 We hope to continue this focus while looking into sustainable packaging options, which is the next field we hope to tackle. 
             </p>
         
@@ -80,17 +90,17 @@
 
         
             <div class = 'form'>
-                <form action="#" method = "post">
+                <form action="https://formspree.io/f/mpzbzzga" method = "post">
                     <fieldset> 
                         <legend>Want to learn more? </br> Contact Us!</legend>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name">
                         <br/>
                         <label for = 'email'> Email: </label>
-                        <input type="text" id="email" email='email'>
+                        <input type="text" id="email" name='email'>
                     </br>
-                        <label for="subject">Message:</label>
-                        <textarea id="subject" name="subject" style="height:200px"></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" style="height:200px"></textarea>
                         </br>
                         <input id='submit' type = "submit" value = "Submit">
 
