@@ -608,8 +608,6 @@ input[type=text], select, textarea {
         min-width: 400px;
         min-height: 400px;
         grid-column: 1 /span 1;
-        /* box-shadow: 10px 10px #191970;
-        border: solid navy 5px; */
         border-radius: 25px;
     }
 
@@ -697,14 +695,12 @@ input[type=text], select, textarea {
         height: 400px;
         width: 400px;
         box-shadow: 10px 10px #191970;
-        border: 5px solid #191970;
     }
 
     #omc_image1, #omc_image2, #omc_image3, #omc_image4, #omc_image5, #omc_image6, #omc_image7, #omc_image8, #omc_image9{
         height: 400px;
         width: 400px;
         box-shadow: 10px 10px #191970;
-        border: 5px solid #191970;
     }
 
     .sustainability{
@@ -807,11 +803,6 @@ input[type=text], select, textarea {
         backface-visibility: hidden;
       }
       
-      /* Style the front side (fallback if image is missing) */
-      /* .flip-card-front {
-        
-      } */
-      
       /* Style the back side */
       .flip-card-back {
         transform: rotateY(180deg);
@@ -823,18 +814,33 @@ input[type=text], select, textarea {
           opacity: 0.5;
       }
 
+    }
 
-      @media (prefers-reduced-motion){
+
+    @media (prefers-reduced-motion){
           /* flip card */
           .flip-card:hover .flip-card-inner {
             transform: none;
           }
         
-          /* #intro_image1, #intro_image2, #intro_image3{
-              animation: animation
-          } */
+          #intro_image1, #intro_image2, #intro_image3, #about_image1, #behind_the_brand_image1, #behind_the_brand_image2, .sustainability p, 
+          #mms_image1, #mms_image2, #mms_image3, #mms_image4, #mms_image5, #mms_image6, #mms_image7, #mms_image8, #mms_image9,
+          #omc_image1, #omc_image2, #omc_image3, #omc_image4, #omc_image5, #omc_image6, #omc_image7, #omc_image8, #omc_image9, .behind_the_brand p,
+          .about_content p{
+              animation: none
+          }
 
+          .sustainability p{
+            background-attachment: inherit;
+            background-position: center;
+            background-repeat: initial;
+            background-size: initial;
+          }
+
+          #mms_image1:hover, #mms_image2:hover, #mms_image3:hover, #mms_image4:hover, #mms_image5:hover, #mms_image6:hover, #mms_image7:hover, #mms_image8:hover, #mms_image9:hover, #omc_image1:hover, #omc_image2:hover, #omc_image3:hover, #omc_image4:hover, #omc_image5:hover, #omc_image6:hover, #omc_image7:hover, #omc_image8:hover, #omc_image9:hover{
+              opacity: 1;
+          }
 
       }
     
-}
+
